@@ -1,0 +1,116 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*, *::after, *::before{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: hsl(204, 43%, 93%);
+    font-family:'Karla', sans-serif;
+    font-size: 1rem;
+}
+.main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.price-grid{
+    padding:10px;
+    margin:10px;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:repeat(2, 1fr); 
+}
+.top{
+    grid-column: span 2;
+    background-color: hsl(0, 0%, 100%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.bottom-one{
+    border-bottom-left-radius: 5px;
+    background-color: hsl(179, 62%, 43%);
+    padding-right: 0;
+}
+.bottom-two{
+    background-color:hsl(179, 47%, 52%);
+    border-bottom-right-radius: 5px;
+}
+div{
+    padding:30px;
+}
+.green-text{
+    color:hsl(71, 73%, 54%);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.turq-text{
+    color:hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+.white-text{
+    color:hsl(0, 0%, 100%);
+}
+.grey-text{
+    color:hsl(218, 22%, 67%);
+}
+.light-grey-text, li, .bottom-last{
+    color:hsl(204, 43%, 93%);
+    font-size: 12px;
+}
+.heading{
+    font-size: 1.25rem;
+    margin-bottom:10px
+}
+.heading-two{
+    margin-bottom: 10px;
+}
+p{
+    margin-bottom:5px;
+}
+li{
+    margin-bottom:2px;
+}
+button{
+    background-color:hsl(71, 73%, 54%);
+    color: hsl(0, 0%, 100%);
+    border:none;
+    width: 80%;
+    height: 45px;
+    border-radius: 5px;
+    margin-top:10px;
+}
+
+.bottom-one p:nth-of-type(2){
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+ul{
+    list-style: none;
+    font-size: 1rem;
+}
+.dollar{
+    font-size: 2.0rem;
+    font-weight:400;
+    color: hsl(0, 0%, 100%); 
+}
+
+@media(max-width:768px){
+    .price-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top{
+        grid-column: 1;
+    }
+    .bottom-one{
+        border-bottom-left-radius: 0px;
+    }
+    .bottom-two{
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+}
