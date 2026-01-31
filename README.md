@@ -30,8 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Single Price Grid Component](https://ftmae.github.io/Frontend-Mentor-Single-Price-Grid-Component/)
 
 ## My process
 
